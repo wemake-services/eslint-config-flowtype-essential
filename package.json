@@ -10,6 +10,13 @@
   "scripts": {
     "lint": "eslint --ignore-path .gitignore ."
   },
+  "keywords": [
+    "eslint-config",
+    "eslint-plugin-flowtype",
+    "flow",
+    "flow-typed",
+    "eslint"
+  ],
   "peerDependencies": {
     "babel-eslint": "^8.2.3"
   },
