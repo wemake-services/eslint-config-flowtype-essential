@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-flowtype-essential",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Essential rules for eslint-plugin-flowtype",
   "main": "index.js",
   "repository": "https://github.com/wemake-services/eslint-config-flowtype-essential.git",
