@@ -35,10 +35,16 @@ Done! Later you can modify your configuration to include any extra rules you nee
 This code is considered valid (and beautiful):
 
 ```js
-type Status = { status: number, data: string } | { error: number, reason: string }
+type Client<T> = {
+  name: string,
+  surname: string,
+  age: number | string,
+  isRegular: boolean,
+  reference: T
+}
 
-async function makeRequest (value: string): Promise<Status> {
-  return proxyRequest(value)
+function greetClient (client: Client<string>): string {
+  return `Hi, ${client.name}-{$client.reference}`
 }
 ```
 
