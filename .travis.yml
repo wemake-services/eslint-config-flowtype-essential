@@ -9,11 +9,11 @@ cache:
 node_js: 9
 
 install:
-  - npm install -g yarn
   - yarn install
 
 script:
   - yarn lint
+  - yarn test
 
 deploy:
   provider: npm
