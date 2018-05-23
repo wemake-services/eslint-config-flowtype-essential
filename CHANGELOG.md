@@ -1,5 +1,9 @@
 # Version history
 
+## Version 0.2.1
+
+- Fixes `eslint-plugin-flowtype` version in `package.json`
+
 
 ## Version 0.2.0
 
