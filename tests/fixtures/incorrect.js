@@ -6,6 +6,8 @@ type Client <T> = {
   age: number|string;
   isRegular: bool;
   reference: T;
+  related: T[];
+  preferences: (string | Object)[];
 }
 
 // eslint-disable-next-line no-unused-vars

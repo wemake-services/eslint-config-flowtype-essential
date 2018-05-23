@@ -26,6 +26,10 @@ module.exports = {
     // Rules come in the same order as in
     // https://github.com/gajus/eslint-plugin-flowtype#rules
 
+    // enforces to use `Array<>` over `[]`:
+    'flowtype/array-style-complex-type': [2, 'verbose'],
+    'flowtype/array-style-simple-type': [2, 'verbose'],
+
     // enforces a particular style for boolean type annotations
     'flowtype/boolean-style': [2, 'boolean'],
 

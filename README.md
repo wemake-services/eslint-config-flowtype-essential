@@ -40,7 +40,9 @@ type Client<T> = {
   surname: string,
   age: number | string,
   isRegular: boolean,
-  reference: T
+  reference: T,
+  related: Array<T>,
+  preferences: Array<string | Object>
 }
 
 function greetClient (client: Client<string>): string {

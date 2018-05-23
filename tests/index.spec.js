@@ -24,7 +24,7 @@ describe('eslint-config-flowtype-essential', () => {
 
   test('incorrect style', () => {
     const result = cli.executeOnFiles([fixtureFile('incorrect.js')])
-    expect(result.errorCount).toEqual(9)
+    expect(result.errorCount).toEqual(11)
 
     const errors = [
       'flowtype/no-primitive-constructor-types',
@@ -32,7 +32,9 @@ describe('eslint-config-flowtype-essential', () => {
       'flowtype/boolean-style',
       'flowtype/delimiter-dangle',
       'flowtype/space-after-type-colon', // twice
-      'flowtype/generic-spacing' // twice
+      'flowtype/generic-spacing', // twice
+      'flowtype/array-style-complex-type',
+      'flowtype/array-style-simple-type'
     ]
 
     const eslintErrors = []

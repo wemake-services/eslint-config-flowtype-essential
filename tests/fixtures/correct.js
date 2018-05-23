@@ -5,7 +5,9 @@ type Client<T> = {
   surname: string,
   age: number | string,
   isRegular: boolean,
-  reference: T
+  reference: T,
+  related: Array<T>,
+  preferences: Array<string | Object>
 }
 
 // eslint-disable-next-line no-unused-vars
