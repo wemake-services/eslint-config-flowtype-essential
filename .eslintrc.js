@@ -1,7 +1,8 @@
+// During tests we need to have just the standard rules:
+const base = process.env.NODE_ENV === 'test' ? 'standard' : 'wemake'
+
 module.exports = {
-  extends: [
-    'wemake'
-  ],
+  extends: base,
   env: {
     node: true
   },
