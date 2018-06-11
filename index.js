@@ -60,7 +60,7 @@ module.exports = {
     // prefer `(a: string)` over `(a:string)`
     'flowtype/space-before-type-colon': [2, 'never'],
     'flowtype/space-after-type-colon': [
-      2, 'always', { 'allowLineBreak': true }
+      2, 'always', { allowLineBreak: true }
     ],
 
     // prefer `Promise<number>` over `Promise <number>`

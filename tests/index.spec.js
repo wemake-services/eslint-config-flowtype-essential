@@ -18,21 +18,26 @@ describe('eslint-config-flowtype-essential', () => {
   })
 
   test('correct style', () => {
+    expect.hasAssertions()
+    expect.assertions(1)
+
     const result = cli.executeOnFiles([fixtureFile('correct.js')])
     expect(result.errorCount).toEqual(0)
   })
 
   test('incorrect style', () => {
+    expect.hasAssertions()
+
     const result = cli.executeOnFiles([fixtureFile('incorrect.js')])
-    expect(result.errorCount).toEqual(11)
+    expect(result.errorCount).toEqual(18)
 
     const errors = [
       'flowtype/no-primitive-constructor-types',
-      'flowtype/union-intersection-spacing', // twice
+      'flowtype/union-intersection-spacing',
       'flowtype/boolean-style',
       'flowtype/delimiter-dangle',
-      'flowtype/space-after-type-colon', // twice
-      'flowtype/generic-spacing', // twice
+      'flowtype/space-after-type-colon',
+      'flowtype/generic-spacing',
       'flowtype/array-style-complex-type',
       'flowtype/array-style-simple-type'
     ]
