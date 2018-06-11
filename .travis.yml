@@ -10,6 +10,7 @@ node_js: 9
 
 install:
   - yarn install
+  - yarn add babel-eslint
 
 script:
   - yarn lint
