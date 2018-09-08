@@ -1,5 +1,10 @@
 # Version history
 
+## Version 1.0.0
+
+- Fixes peer dependency versions
+
+
 ## Version 0.2.1
 
 - Fixes `eslint-plugin-flowtype` version in `package.json`

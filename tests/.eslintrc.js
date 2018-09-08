@@ -1,8 +1,8 @@
 module.exports = {
-  extends: ['plugin:jest/recommended'],
+  'extends': ['plugin:jest/recommended'],
 
-  rules: {
-    'jest/consistent-test-it': ['error', { fn: 'test' }],
+  'rules': {
+    'jest/consistent-test-it': ['error', { 'fn': 'test' }],
     'jest/lowercase-name': 'error',
     'jest/valid-describe': 'error',
     'jest/no-jest-import': 'error',
@@ -12,6 +12,9 @@ module.exports = {
     'jest/valid-expect-in-promise': 'error',
     'jest/no-jasmine-globals': 'error',
 
-    'jest/prefer-expect-assertions': 'error'
-  }
+    'jest/prefer-expect-assertions': 'error',
+
+    // allows to use long functions inside tests:
+    'max-lines-per-function': 'off',
+  },
 }

@@ -2,15 +2,15 @@
 const base = process.env.NODE_ENV === 'test' ? 'standard' : 'wemake'
 
 module.exports = {
-  extends: base,
-  env: {
-    node: true
+  'extends': base,
+  'env': {
+    'node': true,
   },
-  rules: {},
+  'rules': {},
 
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module'
-  }
+  'parser': 'babel-eslint',
+  'parserOptions': {
+    'ecmaVersion': 2017,
+    'sourceType': 'module',
+  },
 }

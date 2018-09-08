@@ -8,21 +8,21 @@
 'use strict'
 
 module.exports = {
-  plugins: [
-    'flowtype'
+  'plugins': [
+    'flowtype',
   ],
 
-  parserOptions: {
-    parser: 'babel-eslint'
+  'parserOptions': {
+    'parser': 'babel-eslint',
   },
 
-  settings: {
-    flowtype: {
-      onlyFilesWithFlowAnnotation: false
-    }
+  'settings': {
+    'flowtype': {
+      'onlyFilesWithFlowAnnotation': false,
+    },
   },
 
-  rules: {
+  'rules': {
     // Rules come in the same order as in
     // https://github.com/gajus/eslint-plugin-flowtype#rules
 
@@ -60,13 +60,13 @@ module.exports = {
     // prefer `(a: string)` over `(a:string)`
     'flowtype/space-before-type-colon': [2, 'never'],
     'flowtype/space-after-type-colon': [
-      2, 'always', { allowLineBreak: true }
+      2, 'always', { 'allowLineBreak': true },
     ],
 
     // prefer `Promise<number>` over `Promise <number>`
     'flowtype/space-before-generic-bracket': [2, 'never'],
 
     // prefer `string | number` over `string|number`
-    'flowtype/union-intersection-spacing': [2, 'always']
-  }
+    'flowtype/union-intersection-spacing': [2, 'always'],
+  },
 }

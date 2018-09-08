@@ -12,8 +12,8 @@ describe('eslint-config-flowtype-essential', () => {
 
   beforeAll(() => {
     cli = new CLIEngine({
-      useEslintrc: true,
-      configFile: path.resolve(__dirname, '..', 'index.js')
+      'useEslintrc': true,
+      'configFile': path.resolve(__dirname, '..', 'index.js'),
     })
   })
 
@@ -21,15 +21,15 @@ describe('eslint-config-flowtype-essential', () => {
     expect.hasAssertions()
     expect.assertions(1)
 
-    const result = cli.executeOnFiles([fixtureFile('correct.js')])
-    expect(result.errorCount).toEqual(0)
+    const lintResult = cli.executeOnFiles([fixtureFile('correct.js')])
+    expect(lintResult.errorCount).toEqual(0)
   })
 
   test('incorrect style', () => {
     expect.hasAssertions()
 
-    const result = cli.executeOnFiles([fixtureFile('incorrect.js')])
-    expect(result.errorCount).toEqual(18)
+    const lintResult = cli.executeOnFiles([fixtureFile('incorrect.js')])
+    expect(lintResult.errorCount).toEqual(18)
 
     const errors = [
       'flowtype/no-primitive-constructor-types',
@@ -39,11 +39,11 @@ describe('eslint-config-flowtype-essential', () => {
       'flowtype/space-after-type-colon',
       'flowtype/generic-spacing',
       'flowtype/array-style-complex-type',
-      'flowtype/array-style-simple-type'
+      'flowtype/array-style-simple-type',
     ]
 
     const eslintErrors = []
-    for (const error of result.results[0].messages) {
+    for (const error of lintResult.results[0].messages) {
       eslintErrors.push(error.ruleId)
     }
 
