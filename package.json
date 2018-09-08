@@ -23,15 +23,13 @@
       "^.+\\.js$": "babel-jest"
     }
   },
-  "peerDependencies": {
-    "babel-eslint": "^9.0.0"
-  },
+  "peerDependencies": {},
   "dependencies": {
     "eslint-plugin-flowtype": "^2.49.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
+    "babel-eslint": "^9.0.0",
     "babel-jest": "^23.0.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
