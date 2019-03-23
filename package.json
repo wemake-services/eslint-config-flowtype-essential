@@ -46,6 +46,6 @@
     "eslint-plugin-unicorn": "^7.0.0",
     "flow-bin": "^0.95.1",
     "flow-typed": "^2.4.0",
-    "jest": "^23.0.0"
+    "jest": "^24.5.0"
   }
 }
